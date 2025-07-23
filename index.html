@@ -37,6 +37,21 @@
             position: relative;
         }
 
+        /* Header bar name link */
+        .header-bar a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .header-bar a:visited {
+            color: #ffffff;
+        }
+
+        .header-bar a:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
         /* Dropdown menu container */
         .dropdown {
             position: relative;
@@ -188,18 +203,54 @@
             color: #551A8B;
         }
 
-        .essay-list {
-            margin: 15px 0;
+        /* Page title */
+        .page-title {
+            text-align: center;
+            margin-bottom: 30px;
         }
 
-        .essay-item {
+        .page-title h1 {
+            font-size: 18px;
+            font-weight: normal;
+            color: #000000;
+        }
+
+        /* Essays list container - aligned to match image width */
+        .essays-container {
+            width: 410px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Essays list */
+        .essays-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .essays-list li {
             margin: 8px 0;
+            line-height: 1.3;
+        }
+
+        .essays-list a {
+            color: #0000EE;
+            text-decoration: underline;
+            font-size: 13px;
+        }
+
+        .essays-list a:visited {
+            color: #551A8B;
+        }
+
+        .essays-list a:hover {
+            text-decoration: underline;
         }
 
         .essay-date {
             color: #666666;
             font-size: 11px;
-            margin-left: 10px;
+            margin-left: 8px;
         }
 
         /* Footer */
@@ -255,15 +306,15 @@
 
 <body>
   <div class="header-bar">
-    <div>Chris Roos</div>    
+    <div><a href="/index.html">Chris Roos</a></div>
     <div class="dropdown">
       <button class="menu-btn">☰</button>
         <div class="dropdown-content">
             <a href="/index.html">Home</a>
             <a href="/essays.html">Essays</a>
-            <a href="#">Quotes</a>
-            <a href="#">Projects</a>
-            <a href="#">About</a>
+            <a href="/quotes.html">Quotes</a>
+            <a href="/index.html">Projects</a>
+            <a href="/index.html">About</a>
           </div>
         </div>
     </div>
