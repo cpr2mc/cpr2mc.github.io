@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta name="description" content="Chris Roos is a graduate of the University of Virginia, a veteran of the United States Navy, and a future MBA candidate at the University of Texas. He is interested in a career in Tech as a product manager or software engineer.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LeetCode</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="header-bar">
+    <div><a href="/index.html">Chris Roos</a></div>
+    <div class="dropdown">
+      <button class="menu-btn">☰</button>
+        <div class="dropdown-content">
+            <a href="/index.html">Home</a>
+            <a href="/essays.html">Essays</a>
+            <a href="/quotes.html">Quotes</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/about.html">About</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">      
+    <div class="page-title">
+        <h1>LeetCode</h1>
+    </div>
+    <div class="content-wrapper">
+        <div class="essays-container">
+          <span><b>Question 1480: Running Sum of 1D Array</b></span>
+          <br>
+          <br>
+          <div class="image-section">
+            <img src="https://cpr2mc.github.io/images/question1480_beginning.png" alt="LeetCode 1480 starting point" />
+          </div>
+          <br>
+          <p>My first exploration into leetcode. I chose typescript so I could learn a new language while practicing the concepts that leetcode trains you in. This question is an easy-level question that tests your ability to iterate through an array to produce an output. The leetcode video discusses the Time Complexity and Space Complexity of the solutions it provides (big-O notation).</p>
+          <br>
+          <p>I don't know typescript so I flipped over to chatGPT and had it describe to me what was happening here. The first thing that is happening is "function" declaring a function named "runningSum", which takes the parameter "nums" typed (via the ":") as a number array ("[]"). Also, runningSum is typed as a number array.</p>
+          <br>
+          <p>From there, the logic is as follows: declare a variable "result" of type nummber array, and let it equal an empty array. Then declare another variable "sum" and set it equal to 0. It is not explicitly typed because the type (integer) is apparent from the initial definition.</p>
+          <br>
+          <p>Then you write a for loop that iterates over the full array of nums (for (let num of nums) {}) and utilize the .push method on result (result.push(sum)) to alter result as you iterate through the nums array. Finally, you return result to produce the answer.</p>
+          <br>
+          <div class="image-section">
+            <img src="https://cpr2mc.github.io/images/question1480_end.png" alt="LeetCode 1480 finished" />
+          </div>
+          <p>The Time Complexity for this solution is O(n), as it has to iterate through each item in the array (n items), and the Space Complexity is O(1) because the solution does not create a data structure that is proportional in size to the input.</p>
+        </div>
+    
+        <div class="footer">
+          <p>&copy; 2025 CR</p>
+        </div>
+    </div>
+    
+  </div>
+
+</body>
+
+</html>
