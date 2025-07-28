@@ -33,7 +33,38 @@
     </div>
     <div class="content-wrapper">
         <div class="essays-container">
+          <!-- QUESTION 1672 -->
+          <span><b>Question 1672: Richest Customer Wealth</b></span>
+          <br>
+          <span>7/28/2025</span>
+          <br>
+          <br>
+          <div class="image-section">
+            <img src="https://cpr2mc.github.io/images/question1672_beginning.png" alt="LeetCode 1672 starting point" />
+          </div>
+          <p>For my second question on leetcode I grabbed a pen and paper so I could walk through the logic of the problem. I have seen this sort of 2D array before in CS50 and in my PDX Code Guild bootcamp so I was familiar with the concept of building two for loops to get into the second dimension of the array. Despite prior experience with this kind of structure, I still needed to sketch out the array to wrap my head arround it.</p>
+          <br>
+          <div class="image-section">
+            <img src="https://cpr2mc.github.io/images/1672_array_sketch.jpeg" alt="LeetCode 1672 array scratch" />
+          </div>
+          <p>Once I felt comfortable with how 2D arrays worked I started talking through the logic of how the for loop should work. First, you need to "open up" each item in the array, which is the customer[m]. Then you need to sum up each value in each item of the array (customer[m][n]). This calls for a nested for loop. One thing I struggled with was when to declare the variable that would contain the totals and customer totals.</p>
+          <br>
+          <div class="image-section">
+            <img src="https://cpr2mc.github.io/images/1672_logic_notes.jpeg" alt="LeetCode 1672 logic notes" />
+          </div>          
+          <p>As I walked through the logic I generated the demand for the variables "total" and "custTotal", but realized that they needed to be initialized outside of each loop so that they could be used within the loop. Once I had the logic written down in rough syntax, I asked chatGPT a couple of questions about how to write the correct syntax,and was able to generate the correct answer without too much guidance. ChatGPT recommended the use of spreader syntax (...) to get to the max value of the array, which I didn't use at first but ended up adopting because I understood what it was doing when I tried to get run Math.max(total) and got a type error.</p>
+          <br>
+          <p></p>
+          <div class="image-section">
+            <img src="https://cpr2mc.github.io/images/question1672_end.png" alt="LeetCode 1672 finished" />
+          </div>
+          <p>As with Question 1480, the space complexity is O(1) since we do not create a data structure that is proportional to our problem set. However, since we have to iterate over every item in the 2D array, our Time Complexity is O(m*n).</p>
+          <br>
+          <br>
+          <!-- QUESTION 1480 -->
           <span><b>Question 1480: Running Sum of 1D Array</b></span>
+          <br>
+          <span>7/26/2025</span>
           <br>
           <br>
           <div class="image-section">
