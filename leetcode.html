@@ -33,6 +33,28 @@
     </div>
     <div class="content-wrapper">
         <div class="essays-container">
+          <!-- QUESTION 1342 -->
+          <span><b>Question 1342: Number of Steps to Reduce a Number to Zero</b></span>
+          <br>
+          <span>7/30/2025</span>
+          <br>
+          <br>
+          <div class="image-section">
+            <img src="https://cpr2mc.github.io/images/1342_beginning.png" alt="LeetCode 1342 starting point" />
+          </div>
+          <p>This problem was very similar to FizzBuzz, where you had to perform some math based on a couple of conditionals. If the input number was divisible by 2, then you divided by 2, otherwise you subtracted 1 from the number. You count each of those steps until the number gets to 0. I arrived at the solution (via pad and paper) relatively quickly and was elated to see that the answer passed all the checks.</p>
+          <div class="image-section">
+            <img src="https://cpr2mc.github.io/images/1342_midpoint.png" alt="LeetCode 1342 midpoint" />
+          </div>          
+          <p>This solution is correct, with Time Complexity of O(logn) and Space Complexity of O(1). The O(logn) notation is new, but it makes sense because dividing by two takes longer the larger the number. I also need to review logarithms but I mostly remember the curvature of the graph and think about it through that context (larger number == longer x axis, initial steepness of the curve is based on the first few divisions by 2).</p>
+          <br>
+          <p>The twist in this problem comes from the video solution introducing bitwise operations. These are some crazy syntax operations that are slightly faster because they machine is able to compute faster, but they also reduce the readability (in my opinion). I think this problem is really just about setting you up with some bitwise experience for some more advanced problems that are going to come up next. I can't explain bitwise operators via written text yet, but I hope to do that after I see them next.</p>
+          <div class="image-section">
+            <img src="https://cpr2mc.github.io/images/1342_end.png" alt="LeetCode 1342 end" />
+          </div>
+          <p>This solution has the same Time and Space Complexity as the prior solution.</p>
+          <br>
+          <br>
           <!-- QUESTION 412 -->
           <span><b>Question 412: FizzBuzz</b></span>
           <br>
